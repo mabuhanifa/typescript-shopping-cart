@@ -25,3 +25,11 @@ export type ShoppingCartContextType = {
     cartQuantity: number
     cartItems: CartItem[]
 }
+export type ShoppingCartProps = {
+    isOpen: boolean
+}
+
+export type CartItemProps = {
+    id: number
+    quantity: number
+}

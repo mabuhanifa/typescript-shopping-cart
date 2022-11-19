@@ -1,12 +1,12 @@
-
+import { Container } from "react-bootstrap"
 
 function App() {
-
-
   return (
-    <div >
-
-    </div>
+    <Container>
+      <div>
+        hi
+      </div>
+    </Container>
   )
 }
 

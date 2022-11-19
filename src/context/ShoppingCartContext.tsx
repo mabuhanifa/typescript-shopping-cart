@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
-import { CartItem, ShoppingCartContext, ShoppingCartProviderProps } from "../types/types";
+import { CartItem, ShoppingCartContextType, ShoppingCartProviderProps } from "../types/types";
 
-const ShoppingCartContext = createContext({} as ShoppingCartContext);
+const ShoppingCartContext = createContext({} as ShoppingCartContextType);
 
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     const [isOpen, setIsOpen] = useState(false);

@@ -15,7 +15,7 @@ export type CartItem = {
     quantity: number
 }
 
-export type ShoppingCartContext = {
+export type ShoppingCartContextType = {
     openCart: () => void
     closeCart: () => void
     getItemQuantity: (id: number) => number

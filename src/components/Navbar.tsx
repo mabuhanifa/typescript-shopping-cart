@@ -11,22 +11,27 @@ export function Navbar() {
                     <Nav.Link to='/store' as={NavLink}>Store</Nav.Link>
                     <Nav.Link to='/about' as={NavLink}>About</Nav.Link>
                 </Nav>
-                {cartQuantity > 0 && (<Button style={{ height: "3rem", width: "3rem", position: "relative" }} variant="outline-secondary">
-                    <div className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
-                        style={{
-                            color: "white",
-                            width: "1.5rem",
-                            height: "1.5rem",
-                            position: "absolute",
-                            bottom: 0,
-                            right: 0,
-                            transform: "translate(25%, 25%)",
-                        }}
-                    >
-                        {cartQuantity}
-                    </div>
-                    <img src="https://www.svgrepo.com/show/316543/cart-1.svg" alt="" />
-                </Button>)}
+                {cartQuantity > 0 && (
+                    <Button
+                        onClick={openCart}
+                        style={{ width: "3rem", height: "3rem", position: "relative" }}
+                        variant="outline-primary"
+                        className="rounded-circle">
+                        <div className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
+                            style={{
+                                color: "white",
+                                width: "1.5rem",
+                                height: "1.5rem",
+                                position: "absolute",
+                                bottom: 0,
+                                right: 0,
+                                transform: "translate(25%, 25%)",
+                            }}
+                        >
+                            {cartQuantity}
+                        </div>
+                        <img src="https://www.svgrepo.com/show/316543/cart-1.svg" alt="" />
+                    </Button>)}
             </Container>
         </NavbarBs>
     )
